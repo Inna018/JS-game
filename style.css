@@ -1,0 +1,110 @@
+/* #final-timer-text {
+  position: absolute;
+  font-family: "Bungee Spice", cursive;
+  font-size: 100pt;
+  text-align: center;
+  width: 100%;
+}
+
+#restartBtn,
+#fsBtn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+}
+
+#restartBtn {
+  right: 80px;
+}
+
+#fsBtn {
+  right: 20px;
+}
+
+#img-block {
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 64px;
+}
+
+#hero-img {
+  width: 576px;
+  height: 384px;
+  position: relative;
+  top: 0;
+  left: -96px;
+  transform: scale(-1, 1);
+}
+
+#jump-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 144px;
+  height: 144px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+#jump-block img {
+  position: absolute;
+  top: -144px;
+  left: -144px;
+  width: 864px;
+  height: 576px;
+  transform: scale(-1, 1);
+}
+
+#jump-block div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 140px;
+  border: 2px solid rgb(0, 119, 255);
+  border-radius: 50%;
+}
+
+#hit-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 144px;
+  height: 144px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+#hit-block img {
+  position: absolute;
+  top: -452px;
+  left: -442px;
+  width: 864px;
+  height: 576px;
+  transform: scale(-1, 1);
+}
+
+#hit-block div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 140px;
+  border: 2px solid rgb(0, 119, 255);
+  border-radius: 50%;
+}
+
+#info {
+  display: none;
+  position: absolute;
+  left: 64px;
+  top: 96px;
+  background-color: black;
+  color: white;
+  font-size: 20pt;
+  padding: 20px;
+} */
