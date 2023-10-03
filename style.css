@@ -1,4 +1,9 @@
-/* #final-timer-text {
+/* #canvas {
+  background-color: white;
+}
+
+#final-timer-canvas,
+#final-timer-text {
   position: absolute;
   font-family: "Bungee Spice", cursive;
   font-size: 100pt;
