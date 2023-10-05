@@ -1,5 +1,4 @@
-//ПЕРЕМЕННЫЕ
-
+//Змінні
 let rightPosition = 0;
 let imgBlockPosition = 0;
 let direction = "right";
@@ -71,8 +70,7 @@ hitBlock.onclick = () => {
   hit = true;
 };
 
-//ФУНКЦИИ
-
+//Функції
 const moveWorldLeft = () => {
   objectsArray.map((elem, index) => {
     elem.style.left = Number.parseInt(elem.style.left) - 32;
@@ -306,8 +304,7 @@ const jumpHandler = () => {
   heroImg.style.top = "-96px";
 };
 
-// ОБРАБОТЧИКИ СОБЫТИЙ
-
+// Обробники подій
 let onTouchStart = (event) => {
   clearInterval(timer);
   x = event.type === "mousedown" ? event.screenX : event.touches[0].screenX;
@@ -401,6 +398,7 @@ const addTiles = (i) => {
   createTileBlack(i);
 };
 
+// Класи
 class Lever {
   leverImg;
   x;
@@ -564,7 +562,6 @@ class Cutscene {
         this.nextButton.style.display = "block";
       }
     }, 20);
-    // this.p.innerText = text;
   }
 }
 class Terminal extends Cutscene {
@@ -1066,6 +1063,7 @@ class HeartRed extends Heart {
     super(x, "assets/Hearts/heart_red.png");
   }
 }
+
 const addHearts = () => {
   for (let i = 0; i < maxLives; i++) {
     let heartEmpty = new HeartEmpty(i);
@@ -1146,16 +1144,16 @@ const addDecorationElements = (f1, f2, f3) => {
   createImgEl(basePath + "/Other/Box.png", 104, f3);
 };
 const addEnemies = () => {
-  let enemy1 = new Enemy1(9, 9, 'Стала известна первая цифра пароля - "1"');
+  let enemy1 = new Enemy1(9, 9, 'Стала відома перша цифра пароля - "1"');
   let enemy2 = new Enemy6(19, 5);
-  let enemy3 = new Enemy5(44, 5, 'Вторая цифра пароля - это "1"');
+  let enemy3 = new Enemy5(44, 5, 'Друга цифра пароля – це "1"');
   let enemy4 = new Enemy2(65, 5);
-  let enemy5 = new Enemy1(79, 1, 'Третья цифра пароля - "2"');
+  let enemy5 = new Enemy1(79, 1, 'Третя цифра пароля - "2"');
   let enemy6 = new Enemy6(93, 5);
   let enemy7 = new Enemy2(
     100,
     9,
-    'Последняя цифра пароля - "3".\n\nСкорее ищи рычаг, у тебя 15 секунд!',
+    'Остання цифра пароля - "3".\n\nШвидше шукай важіль, у тебе 15 секунд!',
     true
   );
 };
@@ -1191,8 +1189,6 @@ const buildLevel = () => {
   addEnemies();
 };
 const addStartScreen = () => {
-  //#38002c - фон
-  //#8babbf - текст
   let div = window.document.createElement("div");
   div.style.position = "absolute";
   div.style.left = 0;
